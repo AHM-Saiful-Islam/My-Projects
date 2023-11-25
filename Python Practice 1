@@ -318,10 +318,28 @@ output:
 
 
 
+
 ''''''
 Exercise 8
 
 ''''''
+phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" % (name, number))
+
+''''''
+Output:
+Phone number of Jack is 938377264
+Phone number of John is 938477566
+Phone number of Jill is 947662781
+''''''
+
+
+
+
+
+
+
 
 
 
