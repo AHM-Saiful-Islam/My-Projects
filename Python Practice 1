@@ -319,6 +319,7 @@ output:
 
 
 
+
 ''''''
 Exercise 8
 
@@ -372,6 +373,39 @@ output:
     Jill is not listed in the phonebook.
 ''''''
 
+
+
+
+
+
+
+
+
+
+
+# exercise 10
+# In this exercise, print an alphabetically sorted list of all the functions in the re module containing the word find.
+
+import re
+
+# Your code goes here
+functions = dir(re)
+
+find_members = []
+
+for member in functions:
+    if "find" in member:
+        find_members.append(member)
+        
+sorted_list = sorted(find_members)
+
+print(sorted_list)
+
+
+''''''
+output:
+    ['findall', 'finditer']
+''''''
 
 
 
