@@ -1,8 +1,8 @@
-''''''
+'''
 exercise 1
 The target of this exercise is to create two lists called x_list and y_list, which contain 10 instances of the variables x and y, respectively. 
 You are also required to create a list called big_list, which contains the variables x and y, 10 times each, by concatenating the two lists you have created.
-''''''
+'''
 
 x = object()
 y = object()
@@ -20,14 +20,14 @@ if x_list.count(x) == 10 and y_list.count(y) == 10:
 if big_list.count(x) == 10 and big_list.count(y) == 10:
     print("Great!")
 
-''''''
+'''
 output:
     x_list contains 10 objects
     y_list contains 10 objects
     big_list contains 20 objects
     Almost there...
     Great!
-''''''
+'''
 
 
 
@@ -36,19 +36,19 @@ output:
 
 
 
-''''''
+'''
 exercise 2
 You will need to write a format string that prints out the data using the following syntax: Hello John Doe. Your current balance is $53.44.
-''''''
+'''
 data = ("John", "Doe", 53.44)
 format_string = "Hello %s %s. Your current balance is $%s."
 
 print(format_string % (data[0], data[1], data[2]))
 
-''''''
+'''
 output:
     Hello John Doe. Your current balance is $53.44.
-''''''
+'''
 
 
 
@@ -94,7 +94,7 @@ if s.endswith("ome!"):
 # each containing only a word
 print("Split the words of the string: %s" % s.split(" "))
 
-''''''
+'''
 output:
     Length of s = 20
     The first occurrence of the letter a = 8
@@ -109,7 +109,7 @@ output:
     String starts with 'Str'. Good!
     String ends with 'ome!'. Good!
     Split the words of the string: ['String', 'Capital', 'come!']
-''''''
+'''
 
 
 
@@ -146,7 +146,7 @@ if first_array and first_array[0] == 1:
 if not second_number:
     print("6")
 
-''''''
+'''
 output:
     1
     2
@@ -154,7 +154,7 @@ output:
     4
     5
     6
-''''''
+'''
 
 
 
@@ -165,11 +165,11 @@ output:
 
 
 
-''''''
+'''
 Exercise 5
 Loop through and print out all even numbers from the numbers list in the same order they are received.
 Don't print any numbers that come after 237 in the sequence.
-''''''
+'''
 
 numbers = [
     951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
@@ -192,7 +192,7 @@ for number in numbers:
     else:
         print(number)
 
-''''''
+'''
 output:
     402
     984
@@ -216,7 +216,7 @@ output:
     162
     758
     918
-''''''
+'''
 
 
 
@@ -229,7 +229,7 @@ output:
 
 
 
-''''''
+'''
 exercise 6
 In this exercise, you'll use an existing function, and while adding your own create a fully functional program.
 Add a function named list_benefits() that returns the following list of strings: "More organized code", "More readable code", 
@@ -237,7 +237,7 @@ Add a function named list_benefits() that returns the following list of strings:
 Add a function named build_sentence(info) which receives a single argument containing a string and returns a sentence starting 
 with the given string and ending with the string " is a benefit of functions!"
 Run and see all the functions work together!
-''''''
+'''
 
 # Modify this function to return a list of strings as defined above
 def list_benefits():
@@ -254,14 +254,14 @@ def name_the_benefits_of_functions():
 
 name_the_benefits_of_functions()
 
-''''''
+'''
 output:
     More organized code is a benefit of functions!
     More readable code is a benefit of functions!
     Easier code reuse is a benefit of functions!
     Allowing programmers to share and connect code together is a benefit of functions!
 
-''''''
+'''
 
 
 
@@ -272,11 +272,11 @@ output:
 
 
 
-''''''
+'''
 Exercise 7
 We have a class defined for vehicles. Create two new vehicles called car1 and car2. 
 Set car1 to be a red convertible worth $60,000.00 with a name of Fer, and car2 to be a blue van named Jump worth $10,000.00.
-''''''
+'''
 
 # define the Vehicle class
 class Vehicle:
@@ -303,12 +303,12 @@ car2.value = 10000.00
 print(car1.description())
 print(car2.description())
 
-''''''
+'''
 output:
     Fer is a red convertible car worth $60000.00.
     Jump is a blue van car worth $10000.00.
 
-''''''
+'''
 
 
 
@@ -320,20 +320,20 @@ output:
 
 
 
-''''''
+'''
 Exercise 8
 
-''''''
+'''
 phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
 for name, number in phonebook.items():
     print("Phone number of %s is %d" % (name, number))
 
-''''''
+'''
 Output:
 Phone number of Jack is 938377264
 Phone number of John is 938477566
 Phone number of Jill is 947662781
-''''''
+'''
 
 
 
@@ -343,10 +343,10 @@ Phone number of Jill is 947662781
 
 
 
-''''''
+'''
 Exercise 9
 Add "Jake" to the phonebook with the phone number 938273443, and remove Jill from the phonebook.
-''''''
+'''
 
 phonebook = {  
     "John" : 938477566,
@@ -367,11 +367,11 @@ if "Jake" in phonebook:
 if "Jill" not in phonebook:      
     print("Jill is not listed in the phonebook.")  
 
-''''''
+'''
 output:
     Jake is listed in the phonebook.
     Jill is not listed in the phonebook.
-''''''
+'''
 
 
 
@@ -402,10 +402,10 @@ sorted_list = sorted(find_members)
 print(sorted_list)
 
 
-''''''
+'''
 output:
     ['findall', 'finditer']
-''''''
+'''
 
 
 
@@ -414,7 +414,43 @@ output:
 
 
 
-''''''
+
+
+
+
+
+
+# Exercise 11
+'''
+Write a program using lambda functions to check if a number in the given list is odd. Print "True" if the number is odd or "False" if not for each element.
+'''
+
+l = [2,4,7,3,14,19]
+for i in l:
+    # your code here
+    number = lambda x: x%2 == 0
+    print(number(I))
+'''
+output:
+    True
+    True
+    False
+    False
+    True
+    False
+
+'''
+
+
+
+
+
+
+
+
+
+
+'''
 source: https://www.learnpython.org/en/Welcome
 
-''''''
+'''
